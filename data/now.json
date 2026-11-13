@@ -1,0 +1,20 @@
+{
+  "updated": "2026-11-13",
+  "items": [
+    {
+      "label": "Building",
+      "glyph": "B",
+      "text": "AI/ML projects in Python with TensorFlow and PyTorch."
+    },
+    {
+      "label": "Learning",
+      "glyph": "L",
+      "text": "Generative AI, LLM fundamentals and prompt engineering."
+    },
+    {
+      "label": "Looking for",
+      "glyph": "R",
+      "text": "Python developer roles where I can grow with Django, Flask and AI."
+    }
+  ]
+}

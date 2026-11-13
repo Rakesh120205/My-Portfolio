@@ -1,0 +1,48 @@
+# Rakesh Patnam
+
+> Python developer with 1.9 years of experience building tested Django and Flask applications, REST APIs and automation, backed by SQL and Linux skills, plus AI/ML projects in TensorFlow and PyTorch.
+
+## Overview
+- **Name:** Rakesh Patnam
+- **Location:** Hyderabad, Telangana, India
+- **Email:** patnamrakesh406@gmail.com
+- **GitHub:** [https://github.com/Rakesh120205](https://github.com/Rakesh120205)
+- **LinkedIn:** [https://www.linkedin.com/in/rakesh-patnam-](https://www.linkedin.com/in/rakesh-patnam-)
+- **Resume:** /Rakesh_Patnam_Resume.pdf
+
+## Summary & Expertise
+Rakesh Patnam is a Python-focused software engineer (B.Tech, Computer Science) with 1.9 years of experience building tested Python, Django and Flask applications and automation, backed by SQL and Linux skills, and working directly with clients in fast-paced Agile teams. He replaces manual processes with reliable, documented scripts and uses AI-assisted tools responsibly to speed up coding and debugging. He has built Python AI/ML projects (a TensorFlow CNN and a PyTorch NLP chatbot with REST API integration) and completed Generative AI training.
+
+## Technical Skills
+- **Programming:** Python (OOP, data structures & algorithms, automation, scripting), Java, JavaScript, SQL, HTML.
+- **APIs & Web:** Django, Django REST Framework, Flask, REST API development and integration (JSON).
+- **AI/ML & AI-Assisted Development:** TensorFlow, PyTorch, OpenCV, NLTK, Pandas, NumPy, CNN; AI copilots, prompt engineering, LLM fundamentals.
+- **Databases & Cloud:** SQL Server Administration, MySQL, query writing and optimization, relational design, Oracle Fusion Cloud.
+- **Debugging & Quality:** Unit testing, acceptance-criteria testing, code reviews, defect resolution, documentation.
+- **DevOps & Linux:** Git, GitHub, production deployments, monitoring, incident management (ITIL); RHEL, Ubuntu, LVM, mount, fsck.
+- **Agile & Collaboration:** Agile, Scrum, Kanban, SDLC, stakeholder communication, SLA adherence.
+
+## Projects
+
+- **Mental Health Analyzer (CNN)**
+  - Description: Python web application using OpenCV and a TensorFlow CNN that runs real-time predictions for facial emotion detection alongside psychometric tests.
+  - Tech Stack: Python, TensorFlow, CNN, OpenCV.
+
+- **Chatbot Song Recommendation System**
+  - Description: Python conversational assistant built from scratch with NLTK and PyTorch that interprets user intent and mood from natural language dialogue and recommends music via the Spotify REST API.
+  - Tech Stack: Python, PyTorch, NLTK, REST API (JSON).
+
+## Experience & Education
+
+- **Sr. Systems Engineer** | Cognizant (March 2025 - November 2026)
+  - Developed and maintained Python applications and automation scripts for monitoring and troubleshooting.
+  - Built web features and REST APIs with Django and Flask (models, views, serializers, authentication) on SQL Server and MySQL.
+  - Worked directly with clients and stakeholders to gather requirements, demo progress and turn feedback into features.
+  - Wrote and optimized SQL; supported Oracle Fusion Cloud applications.
+  - Tested Django and Flask output with unit tests and acceptance criteria; resolved incidents within SLA; administered RHEL and Ubuntu servers.
+- **B.Tech in Computer Science** | Sphoorthy Engineering College, Hyderabad (Dec 2020 - Aug 2024, CGPA 7.1)
+
+## Certifications
+- SQL Server Administration (Udemy)
+- Generative AI (Udemy)
+- Innovation Hub Member

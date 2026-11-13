@@ -1,0 +1,19 @@
+{
+  "name": "Rakesh Patnam",
+  "avatar": "/avatar.png",
+  "avatarTwin": "/avatar-pixeled.png",
+  "tagline": "Python developer with 1.9 years of experience building tested Django and Flask applications, REST APIs and automation, backed by SQL and Linux skills. I also build AI/ML projects with TensorFlow and PyTorch.",
+  "roles": [
+    "Python Developer"
+  ],
+  "githubUsername": "Rakesh120205",
+  "socialLinks": {
+    "linkedinUrl": "https://www.linkedin.com/in/rakesh-patnam-",
+    "githubUrl": "https://github.com/Rakesh120205",
+    "codepenUrl": "#",
+    "xUrl": "#",
+    "instagramUrl": "#",
+    "resumeUrl": "/Rakesh_Patnam_Resume.pdf"
+  },
+  "location": "Hyderabad, India"
+}

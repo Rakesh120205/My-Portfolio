@@ -1,0 +1,67 @@
+[
+  {
+    "group": "Languages",
+    "note": "Python first, with SQL close behind.",
+    "items": [
+      "Python",
+      "SQL",
+      "Java",
+      "JavaScript",
+      "HTML"
+    ]
+  },
+  {
+    "group": "Web & APIs",
+    "note": "Backends, APIs and the data behind them.",
+    "items": [
+      "Django",
+      "Django REST Framework",
+      "Flask",
+      "REST APIs"
+    ]
+  },
+  {
+    "group": "AI / ML",
+    "note": "Models, data and prompts.",
+    "items": [
+      "TensorFlow",
+      "PyTorch",
+      "OpenCV",
+      "NLTK",
+      "Pandas",
+      "NumPy",
+      "Prompt Engineering"
+    ]
+  },
+  {
+    "group": "Data",
+    "note": "Querying, modelling and administering it.",
+    "items": [
+      "SQL Server",
+      "MySQL",
+      "Oracle Fusion Cloud",
+      "Relational Design"
+    ]
+  },
+  {
+    "group": "Systems",
+    "note": "Keeping things running and shipping safely.",
+    "items": [
+      "Linux",
+      "RHEL",
+      "Ubuntu",
+      "Git",
+      "GitHub",
+      "Incident Management (ITIL)",
+      "Agile / Scrum"
+    ]
+  },
+  {
+    "group": "Certified",
+    "note": "Courses completed on Udemy.",
+    "items": [
+      "SQL Server Administration",
+      "Generative AI"
+    ]
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Sr. Systems Engineer",
+    "location": "Cognizant",
+    "description": "Python development, SQL and application support across cloud application, SQL Server and Linux environments",
+    "icon": "work",
+    "date": "March 2025 - November 2026",
+    "points": [
+      "Developed and maintained Python applications and automation scripts (OOP, data structures, algorithms) for monitoring and troubleshooting, replacing manual tasks with documented solutions.",
+      "Built web features and REST APIs with Django and Flask (models, views, serializers, authentication) on SQL Server and MySQL databases.",
+      "Worked directly with clients and stakeholders to gather requirements, demo progress and turn feedback into working features.",
+      "Wrote and optimized SQL queries on SQL Server and MySQL; managed user and role access and supported Oracle Fusion Cloud applications.",
+      "Tested Python, Django and Flask output with unit tests and acceptance criteria; reviewed and tested all AI-assisted (copilot) code for quality and security.",
+      "Resolved incidents within SLA using root-cause analysis (ITIL), supported production deployments with Git and code reviews, and administered RHEL and Ubuntu servers (LVM, mount, fsck)."
+    ],
+    "logo": "/logos/cognizant.png"
+  },
+  {
+    "title": "B.Tech in Computer Science",
+    "location": "Sphoorthy Engineering College",
+    "description": "Bachelor of Technology in Computer Science, Hyderabad (CGPA 7.1).",
+    "icon": "education",
+    "date": "Dec 2020 - Aug 2024",
+    "logo": "/logos/jntuh.png"
+  }
+]

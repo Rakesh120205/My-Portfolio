@@ -1,0 +1,121 @@
+% Resume: Rakesh Patnam
+% Adapted from Jake Gutierrez's MIT-licensed resume template.
+% Single-column A4 layout; compile with pdfLaTeX on Overleaf.
+\documentclass[a4paper,10pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=0.5in,top=0.4in,bottom=0.25in]{geometry}
+\usepackage{microtype}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{needspace}
+
+% Enable searchable text when using pdfLaTeX.
+\ifdefined\pdfgentounicode
+  \InputIfFileExists{glyphtounicode.tex}{}{}
+  \pdfgentounicode=1
+\fi
+\pagestyle{empty}
+\urlstyle{same}
+\raggedright
+\raggedbottom
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\titleformat{\section}{\large\bfseries}{}{0pt}{}[\titlerule]
+\titlespacing*{\section}{0pt}{9pt}{5pt}
+\linespread{1.055}
+
+% Text-only entries: consistent left edge and right-aligned dates.
+\newcommand{\resumeSubheading}[4]{%
+  \Needspace{5\baselineskip}%
+  \textbf{#1}\hfill #2\par
+  \textit{#3}\hfill \textit{#4}\par
+}
+\newcommand{\resumeProjectHeading}[4]{%
+  \Needspace{5\baselineskip}%
+  \textbf{#1}\hfill
+  \href{#2}{\underline{GitHub}}\enspace\textbar\enspace
+  \href{#3}{\underline{Live}}\par
+  \textit{#4}\par
+}
+\newenvironment{resumeItems}{%
+  \begin{itemize}[leftmargin=14pt,label=\textbullet,
+    labelsep=5pt,topsep=3pt,itemsep=3pt,parsep=0pt,partopsep=0pt]
+}{\end{itemize}\vspace{3pt}}
+
+\begin{document}
+\begin{center}
+  {\fontsize{24}{28}\selectfont\bfseries Rakesh Patnam}\par
+  \vspace{2pt}
+  \small Python Developer \textbar\  SQL \textbar\  Linux \textbar\  AI-Assisted Development\par
+  \vspace{2pt}
+  Hyderabad, Telangana\enspace\textbar\enspace
+  \href{tel:+919392695330}{9392695330}\enspace\textbar\enspace
+  \href{mailto:patnamrakesh406@gmail.com}{patnamrakesh406@gmail.com}\enspace\textbar\enspace
+  \href{https://www.linkedin.com/in/rakesh-patnam-}{LinkedIn}\enspace\textbar\enspace
+  \href{https://github.com/Rakesh120205}{GitHub}
+\end{center}
+
+\section{Professional Summary}
+Python-focused software engineer (B.Tech, Computer Science) with 1.9 years of experience building tested Python, Django and Flask applications and automation, backed by SQL and Linux skills, and working directly with clients, in fast-paced Agile teams. Replaces manual processes with reliable, documented scripts. Uses AI-assisted tools responsibly to speed up coding and debugging. Built Python AI/ML projects (TensorFlow CNN, PyTorch NLP chatbot with REST API integration) and completed Generative AI training.
+
+\section{Technical Skills}
+\textbf{Programming:} Python (OOP, data structures \& algorithms, automation, scripting), Java, JavaScript, SQL, HTML\par
+\vspace{2pt}
+\textbf{APIs \& Web:} Django, Django REST Framework, Flask, REST API development and integration (JSON)\par
+\vspace{2pt}
+\textbf{AI/ML \& AI-Assisted Development:} TensorFlow, PyTorch, OpenCV, NLTK, Pandas, NumPy, CNN; AI copilots, prompt engineering, LLM fundamentals\par
+\vspace{2pt}
+\textbf{Databases \& Cloud:} SQL Server Administration, MySQL, query writing and optimization, relational design, Oracle Fusion Cloud\par
+\vspace{2pt}
+\textbf{Debugging \& Quality:} Unit testing, acceptance-criteria testing, code reviews, defect resolution, documentation\par
+\vspace{2pt}
+\textbf{DevOps \& Linux:} Git, GitHub, production deployments, monitoring, incident management (ITIL); RHEL, Ubuntu, LVM, mount, fsck\par
+\vspace{2pt}
+\textbf{Agile \& Collaboration:} Agile, Scrum, Kanban, SDLC, stakeholder communication, SLA adherence\par
+
+\section{Professional Experience}
+\resumeSubheading
+  {Sr. Systems Engineer}{Mar 2025 -- Nov 2026}
+  {Cognizant}{}
+\textit{Python development, SQL and application support across cloud application, SQL Server and Linux environments}\par
+\begin{resumeItems}
+  \item Developed and maintained Python applications and automation scripts (OOP, data structures, algorithms) for monitoring and troubleshooting, replacing manual tasks with documented solutions.
+  \item Built web features and REST APIs with Django and Flask (models, views, serializers, authentication) on SQL Server and MySQL databases.
+  \item Worked directly with clients and stakeholders to gather requirements, demo progress and turn feedback into working features.
+  \item Wrote and optimized SQL queries on SQL Server and MySQL; managed user and role access and supported Oracle Fusion Cloud applications.
+  \item Tested Python, Django and Flask output with unit tests and acceptance criteria; reviewed and tested all AI-assisted (copilot) code for quality and security.
+  \item Resolved incidents within SLA using root-cause analysis (ITIL), supported production deployments with Git and code reviews, and administered RHEL and Ubuntu servers (LVM, mount, fsck).
+\end{resumeItems}
+
+\section{Software \& AI/ML Projects}
+\Needspace{4\baselineskip}
+\textbf{Mental Health Analyzer (Python, OpenCV, TensorFlow CNN)}\par
+\begin{resumeItems}
+  \item Built a Python web app that runs real-time facial emotion detection with a CNN alongside psychometric tests, end to end.
+\end{resumeItems}
+\Needspace{4\baselineskip}
+\textbf{Chatbot Song Recommendation System (Python, PyTorch, NLTK, APIs)}\par
+\begin{resumeItems}
+  \item Built a Python conversational assistant that reads user intent and mood from dialogue and recommends music via the Spotify REST API (JSON).
+\end{resumeItems}
+
+\section{Certifications \& Achievements}
+\begin{resumeItems}
+  \item \textbf{SQL Server Administration} (Udemy) - installation, configuration, user/role management, security, performance monitoring.
+  \item \textbf{Generative AI} (Udemy) - LLM fundamentals and prompt engineering with hands-on AI tools.
+  \item \textbf{Innovation Hub Member} - contributed to ideation and evaluation of new technology solutions.
+\end{resumeItems}
+
+\section{Education}
+\resumeSubheading
+  {Sphoorthy Engineering College}{Dec 2020 -- Aug 2024}
+  {B.Tech in Computer Science\enspace\textbar\enspace CGPA: 7.1}{Hyderabad}
+\resumeSubheading
+  {Space Junior College}{Jun 2018 -- Jun 2020}
+  {Intermediate (Class 12)\enspace\textbar\enspace 95\%}{Hyderabad}
+\resumeSubheading
+  {Lord's Talent High School}{Mar 2018}
+  {SSC (Class 10)\enspace\textbar\enspace CGPA: 9.8}{Hyderabad}
+\end{document}

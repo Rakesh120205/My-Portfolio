@@ -1,0 +1,21 @@
+{
+  "title": "About",
+  "headline": "I'm a Python developer who builds tested Django and Flask applications, APIs and automation.",
+  "paragraphs": [
+    "I'm a **Python developer** with a **B.Tech in Computer Science** and **1.9 years** of experience building tested **Django and Flask** applications, **REST APIs** and automation.",
+    "At **Cognizant** I build web features and REST APIs (models, views, serializers, authentication) on **SQL Server and MySQL**, and write Python scripts that replace manual tasks with documented solutions.",
+    "I work directly with **clients and stakeholders** to gather requirements, demo progress and turn feedback into working features, in **Agile** teams that use **Git**, code reviews, **unit tests** and acceptance criteria.",
+    "Outside work I build **AI/ML projects** in Python: a **TensorFlow CNN** that detects facial emotion in real time, and a **PyTorch NLP chatbot** that recommends music through the **Spotify REST API**.",
+    "I use **AI-assisted tools** to speed up coding and debugging, reviewing and testing all generated code, and I've completed **Generative AI** and **SQL Server Administration** training."
+  ],
+  "currently": {
+    "role": "Sr. Systems Engineer",
+    "company": "Cognizant",
+    "since": "Since March 2025"
+  },
+  "learning": [
+    "Generative AI & prompt engineering",
+    "AI-assisted development"
+  ],
+  "location": "Hyderabad, India"
+}

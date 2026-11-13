@@ -1,0 +1,28 @@
+[
+  {
+    "title": "Mental Health Analyzer (CNN)",
+    "description": "Built a Python web app that runs real-time facial emotion detection with a CNN alongside psychometric tests, end to end.",
+    "tags": [
+      "Python",
+      "TensorFlow",
+      "CNN",
+      "OpenCV"
+    ],
+    "imageUrl": "/mental-health-analyzer-project.png",
+    "imageAlt": "Mental Health Analyzer project card listing Python, TensorFlow, CNN and OpenCV",
+    "featured": true
+  },
+  {
+    "title": "Chatbot Song Recommendation System",
+    "description": "Built a Python conversational assistant that reads user intent and mood from dialogue and recommends music via the Spotify REST API (JSON).",
+    "tags": [
+      "Python",
+      "PyTorch",
+      "NLTK",
+      "REST API"
+    ],
+    "imageUrl": "/song-recommendation-chatbot-project.png",
+    "imageAlt": "Chatbot Song Recommendation System project card listing Python, PyTorch, NLTK and REST API",
+    "featured": true
+  }
+]

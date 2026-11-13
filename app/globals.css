@@ -1,0 +1,244 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  Design tokens. Colours are RGB channels so Tailwind opacity modifiers work
+  (e.g. border-line/10). Day = warm washi paper, night = sumi ink.
+*/
+@layer base {
+  :root {
+    --paper: 251 249 244;
+    --card: 244 241 233;
+    --ink: 24 23 21;
+    --ink-soft: 87 83 77;
+    --ink-faint: 140 135 127;
+    --line: 24 23 21;
+    --shu: 196 62 38;
+    --matcha: 64 140 96;
+    --water: 232 238 231;
+    color-scheme: light;
+  }
+
+  html.dark {
+    --paper: 19 19 17;
+    --card: 27 27 24;
+    --ink: 237 234 227;
+    --ink-soft: 170 166 158;
+    --ink-faint: 112 108 102;
+    --line: 237 234 227;
+    --shu: 234 102 74;
+    --matcha: 110 196 142;
+    --water: 17 29 27;
+    color-scheme: dark;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: rgb(var(--paper));
+    color: rgb(var(--ink));
+  }
+
+  ::selection {
+    background: rgb(var(--shu) / 0.85);
+    color: rgb(var(--paper));
+  }
+
+  :focus-visible {
+    outline: 2px solid rgb(var(--shu));
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto !important;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  .label {
+    @apply font-mono text-[0.7rem] uppercase tracking-[0.14em] text-ink-faint;
+  }
+
+  /* Underline that draws in from the left on hover. */
+  .link-line {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0% 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .link-line:hover,
+  .group:hover .link-line {
+    background-size: 100% 1px;
+  }
+
+  /* Dotted rule, like the faint ruling on washi writing paper. */
+  .dots-b {
+    border-bottom: 1px dotted rgb(var(--line) / 0.28);
+  }
+  .dots-t {
+    border-top: 1px dotted rgb(var(--line) / 0.28);
+  }
+
+  .tategaki {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(var(--paper));
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(var(--ink) / 0.15);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(var(--ink) / 0.3);
+}
+
+/*
+  Theme switch: the whole page crossfades from one theme to the other.
+  Browsers with view transitions blend a snapshot of each; the rest fade
+  colours via .theme-fade, which is only on <html> for the moment of the switch.
+*/
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 450ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html.theme-fade,
+html.theme-fade *,
+html.theme-fade *::before,
+html.theme-fade *::after {
+  transition:
+    background-color 400ms ease,
+    border-color 400ms ease,
+    color 400ms ease,
+    fill 400ms ease,
+    stroke 400ms ease !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none;
+  }
+}
+
+/* The branch over the pond stirs in a slow breeze. */
+@keyframes branch-sway {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(0.9deg); }
+}
+.branch-sway {
+  transform-origin: 0 0;
+  animation: branch-sway 7s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .branch-sway {
+    animation: none;
+  }
+}
+
+
+/* Section marks: each shape has its own little hover motion. */
+.g-orbit, .g-spin, .g-pulse, .g-hop-shape, .g-hop { transform-box: view-box; transform-origin: 12px 12px; }
+.g-sweep { transform-box: view-box; }
+.glyph-host:hover .g-orbit { animation: g-orbit 1.1s var(--ease-silk, cubic-bezier(0.16, 1, 0.3, 1)); }
+.glyph-host:hover .g-spin { animation: g-spin 0.9s cubic-bezier(0.16, 1, 0.3, 1); }
+.glyph-host:hover .g-draw { stroke-dasharray: 1; animation: g-draw 1s ease-out; }
+.glyph-host:hover .g-pulse { animation: g-pulse 0.7s ease-in-out; }
+.glyph-host:hover .g-sweep { transform-origin: 2.5px 21.5px; animation: g-sweep 0.8s ease-in-out; }
+.glyph-host:hover .g-hop { animation: g-hop 0.6s ease-out; }
+.glyph-host:hover .g-hop-shape { animation: g-pulse 0.6s ease-in-out; }
+@keyframes g-orbit { to { transform: rotate(360deg); } }
+@keyframes g-spin { to { transform: rotate(90deg); } }
+@keyframes g-draw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+@keyframes g-pulse { 50% { transform: scale(1.14); } }
+@keyframes g-sweep { 50% { transform: scale(1.18); } }
+@keyframes g-hop { 40% { transform: translateY(-3px); } 70% { transform: translateY(0.6px); } }
+
+/* "Now" tiles: the letter drops in, rises in or slides in. */
+.now-item:hover .now-b .now-letter { animation: now-drop 0.55s cubic-bezier(0.34, 1.4, 0.64, 1); }
+.now-item:hover .now-l .now-letter { animation: now-rise 0.5s cubic-bezier(0.16, 1, 0.3, 1); }
+.now-item:hover .now-r .now-letter { animation: now-slide-in 0.5s cubic-bezier(0.16, 1, 0.3, 1); }
+@keyframes now-drop { from { transform: translateY(-130%); } to { transform: translateY(0); } }
+@keyframes now-rise { from { transform: translateY(130%); } to { transform: translateY(0); } }
+@keyframes now-slide-in { from { transform: translateX(-130%); } to { transform: translateX(0); } }
+
+/* Logo seal: on hover the seal dissolves into pixels and re-forms. */
+.px-cell { opacity: 0; }
+.group:hover .px-cell { animation: px-cell 0.5s steps(1, end) both; }
+@keyframes px-cell {
+  0% { opacity: 0; background: rgb(var(--paper)); }
+  25% { opacity: 1; background: rgb(var(--paper)); }
+  55% { opacity: 1; background: rgb(var(--shu)); }
+  100% { opacity: 0; background: rgb(var(--shu)); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glyph-host:hover svg *, .now-item:hover .now-letter, .group:hover .px-cell { animation: none !important; }
+}
+
+/* Footer dot mark: faint at rest; the pointer swells nearby dots (see footer.tsx). */
+.ripple-dot {
+  fill: rgb(var(--shu));
+  opacity: 0.1;
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.35s ease-out;
+}
+
+/* The intro rises in on first paint, before any JavaScript has loaded. It never
+   starts fully transparent: Chrome ignores invisible elements when measuring
+   Largest Contentful Paint, and the intro is the page's largest content. */
+@keyframes rise-in {
+  from {
+    opacity: 0.35;
+    transform: translateY(10px);
+  }
+}
+[data-rise] {
+  animation: rise-in 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* Contribution graph columns ink in one after another. */
+@keyframes ink-in {
+  from {
+    opacity: 0;
+    transform: translateY(3px);
+  }
+}
+.ink-in {
+  animation: ink-in 0.3s ease-out both;
+}
+
+/* The living pond fades in over its shell once it has loaded. */
+@keyframes pond-fade {
+  from {
+    opacity: 0;
+  }
+}
+.pond-fade {
+  animation: pond-fade 0.8s ease-out both;
+}
